@@ -11,4 +11,4 @@ lista = list(range(1, num1+1))
 resultado=sum(lista)
 
 #mostrsr el resultado
-print(f"la suma de la lista hasta {num1} es {resultado}")
+print(f"la suma de la lista hasta {num1} es {resultado}.")
