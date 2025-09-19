@@ -8,7 +8,7 @@ def calcular_promedio():
         nota3 = float(entry3.get())
 
         # Calcular promedio
-        promedio = (nota1 + nota2 + nota3) / 3
+        promedio = (nota1 * 0.30) + (nota2 * 0.30) + (nota3 * 0.40 )
 
         # Mostrar resultado en la etiqueta
         lbl_resultado.config(text=f"Su promedio es: {promedio:.2f}")
@@ -35,10 +35,11 @@ entry3.pack()
 
 # Botón para calcular
 btn = tk.Button(ventana, text=" Promediar ", command=calcular_promedio)
-btn.pack(pady=20)
+btn.pack(pady=19)
 
 # Etiqueta para mostrar resultado
 lbl_resultado = tk.Label(ventana, text="", font=("Arial", 12, "bold"))
 lbl_resultado.pack(pady=10)
 
 ventana.mainloop()
+

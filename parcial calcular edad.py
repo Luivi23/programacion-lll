@@ -23,7 +23,7 @@ def calcular_edad():
 #  principal
 ventana = tk.Tk()
 ventana.title("Calculadora de Edad")
-ventana.geometry("300x250")
+ventana.geometry("280x280")
 
 # pedir fecha de nacimiento
 tk.Label(ventana, text="Día de nacimiento:").pack()
@@ -39,7 +39,7 @@ entry_anio = tk.Entry(ventana)
 entry_anio.pack()
 
 # calcular
-tk.Button(ventana, text="Calcular tu Edad", command=calcular_edad).pack(pady=20)
+tk.Button(ventana, text="Calcular tu Edad", command=calcular_edad).pack(pady=19)
 
 # mostrar resultado
 lbl_resultado = tk.Label(ventana, text="", font=("Arial", 12, "bold"))
